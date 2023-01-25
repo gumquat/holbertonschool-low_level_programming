@@ -19,7 +19,5 @@ echo "is zero\n"
 }else{
 echo "is negative\n"
 }
-
 return (0)
 }
-
