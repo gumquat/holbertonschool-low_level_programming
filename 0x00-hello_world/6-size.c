@@ -1,10 +1,10 @@
 /**
-* *main - PUT DESCRIPTION HERE
-* *Return: main returns 0
-* */
+*main - PUT DESCRIPTION HERE
+*Return: main returns 0
+*/
 #include <stdio.h>
 
-int main (void)
+int main(void)
 {
 printf("Size of a char: %i byte(s)\n"sizeof(char));
 printf("Size of a int: %i byte(s)\n"sizeof(int));
