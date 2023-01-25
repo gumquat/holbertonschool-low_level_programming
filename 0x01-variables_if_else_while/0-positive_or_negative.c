@@ -1,9 +1,12 @@
 /**
-*main - PUT DESCRIPTION HERE
+*main - prints the size of various types
 *Return: main always 0
 */
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
+
+/*better style doc for function main goes there */
 int main (void)
 {
 int n;
@@ -19,5 +22,5 @@ echo "is zero\n"
 }else{
 echo "is negative\n"
 }
-return (0)
+return (0);
 }
