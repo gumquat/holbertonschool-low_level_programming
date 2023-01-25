@@ -12,9 +12,14 @@ n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
 echo "is positive\n"
+}
+elsif (n == 0)
+{
+echo "is zero\n"	
 }else{
 echo "is negative\n"
 }
+
 return (0)
 }
 
