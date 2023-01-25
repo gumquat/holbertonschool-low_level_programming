@@ -4,6 +4,7 @@
 */
 #include <stdlib.h>
 #include <time.h>
+#include <iostream>
 /* more headers goes there */
 /*better style doc for function main goes there */
 int main(void)
