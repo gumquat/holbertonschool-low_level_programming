@@ -1,4 +1,4 @@
-/** 
+/**
 *main - prints a sentence using puts command
 *Return: main returns 0
 */
