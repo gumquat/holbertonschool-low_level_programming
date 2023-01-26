@@ -6,12 +6,10 @@
 #include <string.h>
 int main(void)
 {
-char letter;
-letter = 141:
-while (letter <= 172)
+for (int i = 'a'; i <= 'z'; i++)
 {
-putchar(letter);
-letter++;
+putchar(i);
 }
+putchar('\n');
 return (0);
 }
