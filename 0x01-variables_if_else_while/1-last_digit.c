@@ -1,5 +1,5 @@
-/** 
-*main - words go here
+/**
+ * *main - words go here
 *Return: main always 0
 */
 #include <stdio.h>
@@ -24,7 +24,7 @@ else if (n > 5)
 {
 printf("Last digit of %d is %n and is greater than 5\n", n, LastDigit)
 }
-else if (>0<6)
+else if (> 0 && < 6)
 {
 printf("Last digit of %d is %d and is less than 6 and not 0\n", n, LastDigit)
 }
