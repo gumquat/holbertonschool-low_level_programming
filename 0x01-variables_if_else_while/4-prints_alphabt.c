@@ -4,7 +4,6 @@
 */
 #include <stdio.h>
 #include <string.h>
-
 int main(void)
 {
 char i;
@@ -16,7 +15,6 @@ if (i == 'e' || i == 'q')
 else
 {
 putchar(i);
-}
 }
 putchar('\n');
 return (0);
