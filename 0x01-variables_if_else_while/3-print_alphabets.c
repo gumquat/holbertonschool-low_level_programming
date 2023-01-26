@@ -15,7 +15,7 @@ putchar(i);
 }
 for (pp = 'A'; pp <= 'Z'; pp++)
 {
-putchar(pp);	
+putchar(pp);
 }
 putchar('\n');
 return (0);
