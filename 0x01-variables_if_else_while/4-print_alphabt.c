@@ -1,6 +1,6 @@
 /**
 *main - WORDS
-*Return 0 always
+*Return: 0 always
 */
 #include <stdio.h>
 #include <string.h>
