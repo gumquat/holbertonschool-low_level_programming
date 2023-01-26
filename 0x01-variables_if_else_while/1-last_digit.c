@@ -1,5 +1,5 @@
 /**
- * *main - words go here
+*main - words go here
 *Return: main always 0
 */
 #include <stdio.h>
