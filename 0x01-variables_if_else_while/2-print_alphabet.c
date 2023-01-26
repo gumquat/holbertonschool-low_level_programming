@@ -3,10 +3,10 @@
 *Return: main always 0
 */
 #include <stdio.h>
-#include <string.h>
 int main(void)
+char i;
 {
-for (char i = 'a'; i <= 'z'; i++)
+for (i = 'a'; i <= 'z'; i++)
 {
 putchar(i);
 }
