@@ -4,15 +4,13 @@
 */
 #include <stdio.h>
 #include <string.h>
-
 int main (void)
 {
-char i;
-while (i <= 'z')
+letter = 'a';
+while (letter <= 'z')
 {
-i = tolower(i);
-putchar(i);
-i++;
+putchar(letter);
+letter++;
 }
 return (0);
 }
