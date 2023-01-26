@@ -2,9 +2,9 @@
 *main - words go here
 *Return: main always 0
 */
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 int main(void)
 {
 int n, LastDigit;
