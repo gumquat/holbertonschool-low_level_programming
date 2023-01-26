@@ -13,7 +13,6 @@ for (i = 'a'; i <= 'z'; i++)
 {
 putchar(i);
 }
-putchar('\n');
 for (pp = 'A'; pp <= 'Z'; pp++)
 {
 putchar(pp);	
