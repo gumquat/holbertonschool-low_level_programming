@@ -8,9 +8,11 @@
 int main (void)
 {
 char i;
-for (i = 'a'; i <= 'z'; i++)
+while (i <= 'z')
 {
-printf("%c ", i);
+i = tolower(i);
+putchar(i);
+i++;
 }
 return (0);
 }
