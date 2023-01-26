@@ -6,7 +6,8 @@
 #include <string.h>
 int main (void)
 {
-letter = 'a';
+char letter;
+letter = 'a':
 while (letter <= 'z')
 {
 putchar(letter);
