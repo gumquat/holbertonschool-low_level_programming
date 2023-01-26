@@ -8,8 +8,9 @@ int main(void)
 {
 for (int i = 'a'; i <= 'z'; i++)
 {
-int putchar(i);
-}
+putchar(i);
 putchar('\n');
+getch();
+}
 return (0);
 }
