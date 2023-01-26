@@ -6,11 +6,10 @@
 #include <string.h>
 int main(void)
 {
-for (int i = 'a'; i <= 'z'; i++)
+for (char i = 'a'; i <= 'z'; i++)
 {
 putchar(i);
-putchar('\n');
-getch();
 }
+putchar('\n');
 return (0);
 }
