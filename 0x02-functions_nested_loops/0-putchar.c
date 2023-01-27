@@ -6,7 +6,7 @@
 int name(void)
 {
 char message[] = "_putchar";
-putchar(message[1]);
+putchar(message[count]);
 putchar('\n');
 return (0);
 }
