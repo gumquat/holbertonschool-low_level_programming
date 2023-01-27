@@ -1,6 +1,6 @@
 /**
 *main - PUT DESCRIPTION HERE
-*Return: main always 0
+*Return: void
 */
 #include "main.h"
 int print_alphabet(void)
@@ -12,5 +12,4 @@ _putchar (letter);
 letter++;
 }
 _putchar('\n');
-return (0);
 }
