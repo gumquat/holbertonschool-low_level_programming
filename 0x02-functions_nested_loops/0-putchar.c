@@ -5,8 +5,13 @@
 #include "main.h"
 int name(void)
 {
-char message[] = "_putchar";
-putchar(message);
+char *message = "_putchar";
+
+while (*message)
+{
+putchar(*message);
+message++;
+}
 putchar('\n');
 return (0);
 }
