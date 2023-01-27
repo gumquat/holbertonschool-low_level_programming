@@ -5,7 +5,7 @@
 #include "main.h"
 int main(void)
 {
-
+int sh;
 char *message = "_putchar";
 
 while (*message)
