@@ -3,7 +3,7 @@
 *Return: main always 0
 */
 
-#include "main.h"
+#include "main.c"
 
 int main(void)
 {
