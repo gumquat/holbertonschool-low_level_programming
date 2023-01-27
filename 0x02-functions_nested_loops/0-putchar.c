@@ -6,7 +6,7 @@
 
 int main(void)
 {
-charsh = "_putchar";
+char sh = "_putchar";
 
 while (sh)
 {
