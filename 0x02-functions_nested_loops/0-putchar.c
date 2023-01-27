@@ -3,11 +3,10 @@
 *Return: main always 0
 */
 
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 int main(void)
 {
-printf("_putchar\n");
+putchar("_putchar\n");
 	return (0);
 }
