@@ -5,8 +5,8 @@
 
 #include "main.h"
 
-int main(void)
+int name(void)
 {
 putchar('_putchar\n');
-	return (0);
+return (0);
 }
