@@ -6,7 +6,7 @@
 int name(void)
 {
 char p;
-p = '_putchar';
+p == "_putchar";
 putchar(p);
 putchar('\n');
 return (0);
