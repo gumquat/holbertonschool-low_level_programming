@@ -3,16 +3,16 @@
 *Return: main always 0
 */
 #include "main.h"
+
 int main(void)
 {
-int sh;
-char *message = "_putchar";
+char sh="_putchar";
 
-while (*message)
+while (sh)
 {
-putchar(*message);
+_putchar(sh);
 sh++;
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
