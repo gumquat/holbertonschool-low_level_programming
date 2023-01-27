@@ -6,13 +6,10 @@
 
 int main(void)
 {
-char sh = "_putchar";
-
-while (sh)
-{
-_putchar(sh);
-sh++;
-}
+char *myput = "_putchar";
+int i;
+for (i=0; myput[i]; i++)
+	_putchar(myput[i]);
 _putchar('\n');
 return (0);
 }
