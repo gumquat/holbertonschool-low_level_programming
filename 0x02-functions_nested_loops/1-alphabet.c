@@ -2,10 +2,8 @@
 *main - PUT DESCRIPTION HERE
 *Return: main always 0
 */
-
-#include "main.c"
-
-int main(void)
+#include "main.h"
+int print_alphabet(void)
 {
 char letter = 'a';
 while (letter <= 'z');
