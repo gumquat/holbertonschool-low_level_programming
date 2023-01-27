@@ -5,9 +5,8 @@
 #include "main.h"
 int name(void)
 {
-char p;
-p = "_putchar";
-putchar(p);
+char message[] = "_putchar";
+putchar(message[1]);
 putchar('\n');
 return (0);
 }
