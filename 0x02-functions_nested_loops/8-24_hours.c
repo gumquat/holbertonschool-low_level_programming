@@ -4,7 +4,7 @@
 *@b: hours of single digits
 *@c: minutes of ten digits
 *@d: minutes of single digits
-*Return: something
+*Return: always 0
 */
 
 #include "main.h"
