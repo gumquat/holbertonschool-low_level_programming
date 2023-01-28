@@ -1,5 +1,5 @@
 /**
-*Jack_Bauer - makes a whole ass clock
+*main - makes a whole ass clock
 *@a: hours of ten digits
 *@b: hours of single digits
 *@c: minutes of ten digits
@@ -9,7 +9,7 @@
 
 #include "main.h"
 
-int Jack_Bauer(void)
+int main(void)
 {
 
 int a, b, c, d;
