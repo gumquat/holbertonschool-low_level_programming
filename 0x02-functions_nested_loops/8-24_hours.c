@@ -9,7 +9,7 @@
 
 #include "main.h"
 
-int 24_hours(void)
+int Jack_Bauer(void)
 {
 
 for (a = 0; a <= 2; a++)
