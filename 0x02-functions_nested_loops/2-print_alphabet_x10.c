@@ -2,14 +2,11 @@
 *main - PUT DESCRIPTION HERE
 *Return: main always 0
 */
-
 #include "main.h"
-
 int main(void)
 {
-int i;
-char letter 'a';
-
+int i = 0;
+char letter = 'a';
 while (i < 10)
 {
 letter = 'a';
