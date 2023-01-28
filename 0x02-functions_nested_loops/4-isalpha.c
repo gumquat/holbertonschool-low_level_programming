@@ -6,13 +6,14 @@
 #include "main.h"
 int functionNAME(int i)
 {
+
 char letter = 'c';
 if (i >= 'a' && i <= 'z')
 {
 	return (1);
 }
 
-else if (i >= 'A' && <= 'Z')
+else if (i >= 'A' && i <= 'Z')
 {
 	return (1);
 }
