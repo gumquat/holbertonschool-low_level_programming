@@ -11,10 +11,8 @@
 
 int main(void)
 {
-int a;
-int b;
-int c;
-int c;
+
+int a, b, c, d;
 
 for (a = 0; a <= 2; a++)
 {
@@ -28,8 +26,10 @@ for (a = 0; a <= 2; a++)
 				}
 			_putchar(a + '0');
 			_putchar(b + '0');
+			_puchar (58);
 			_putchar(c + '0');
 			_putchar(d + '0');
+			_putchar('\n');
 		}
 		}
 }
