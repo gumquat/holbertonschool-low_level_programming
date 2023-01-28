@@ -1,6 +1,6 @@
 /**
 *_islower - checks for lowercase
-*@c: i is an ascii character
+*@i: i is an ascii character
 *Return: true if lowercase
 */
 #include "main.h"
