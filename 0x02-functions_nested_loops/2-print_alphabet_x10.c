@@ -1,22 +1,22 @@
 /**
-*main - PUT DESCRIPTION HERE
-*Return: main always 0
+*main - print alphabet 10 times
+*Return: void
 */
 #include "main.h"
-int main(void)
+int print_alphabet_x10(void)
 {
-int round = 0;
+int i = 0;
 char letter = 'a';
-while (round < 10)
+while (i < 10)
 {
 	letter = 'a';
 	while (letter <= 'z')
 		{
-		_putchar(letter);
-		letter++;
+			_putchar(letter);
+			letter++;
 		}
 	_putchar('\n');
 }
-round++;
+i++;
 return (0);
 }
