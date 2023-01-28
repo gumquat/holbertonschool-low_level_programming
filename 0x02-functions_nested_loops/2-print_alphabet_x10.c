@@ -1,22 +1,22 @@
-#include "main.h"
 /**
 *main - PUT DESCRIPTION HERE
 *Return: main always 0
 */
+#include "main.h"
 int main(void)
 {
-int i = 0;
+int round = 0;
 char letter = 'a';
-while (i < 10)
+while (round < 10)
 {
-letter = 'a';
-while (letter <= 'z')
-{
-_putchar(letter);
-letter++;
+	letter = 'a';
+	while (letter <= 'z')
+		{
+		_putchar(letter);
+		letter++;
+		}
+	_putchar('\n');
 }
-_putchar('\n');
-}
-i++;
+round++;
 return (0);
 }
