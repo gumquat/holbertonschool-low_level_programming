@@ -1,5 +1,5 @@
 /**
-*24_hours - makes a whole ass clock
+*Jack_Bauer - makes a whole ass clock
 *@a: hours of ten digits
 *@b: hours of single digits
 *@c: minutes of ten digits
