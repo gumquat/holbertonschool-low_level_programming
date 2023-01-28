@@ -8,7 +8,6 @@
 */
 
 #include "main.h"
-
 int jack_bauer(void)
 {
 
