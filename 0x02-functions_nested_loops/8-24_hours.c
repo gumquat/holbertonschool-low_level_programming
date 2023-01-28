@@ -9,7 +9,7 @@
 
 #include "main.h"
 
-int 24_hoursi(int i)
+int 24_hours(int i)
 {
 int a, b, c, d;
 
