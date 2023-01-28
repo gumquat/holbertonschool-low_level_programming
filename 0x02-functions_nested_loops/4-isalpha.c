@@ -6,8 +6,6 @@
 #include "main.h"
 int functionNAME(int i)
 {
-
-char letter = 'c';
 if (i >= 'a' && i <= 'z')
 {
 	return (1);
