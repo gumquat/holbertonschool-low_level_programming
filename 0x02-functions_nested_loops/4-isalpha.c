@@ -4,7 +4,7 @@
 *Return: true if is letter
 */
 #include "main.h"
-int functionNAME(int i)
+int _isalpha(int i)
 {
 if (i >= 'a' && i <= 'z')
 {
