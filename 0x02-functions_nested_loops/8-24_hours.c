@@ -1,5 +1,5 @@
 /**
-*24-hours - description HERE
+*main - makes a whole ass clock 
 *@a: hours of ten digits
 *@b: hours of single digits
 *@c: minutes of ten digits
@@ -11,7 +11,6 @@
 
 int main(void)
 {
-int a, b, c, d;
 
 for (a = 0; a <= 2; a++)
 {
