@@ -3,9 +3,8 @@
 *@c: i is an ascii character
 *Return: true if lowercase
 */
-
 #include "main.h"
-
+int i;
 int _islower(int i)
 {
 if (i >= 'a' && i <= 'z')
