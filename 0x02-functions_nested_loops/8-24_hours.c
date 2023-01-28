@@ -11,6 +11,10 @@
 
 int main(void)
 {
+int a;
+int b;
+int c;
+int c;
 
 for (a = 0; a <= 2; a++)
 {
