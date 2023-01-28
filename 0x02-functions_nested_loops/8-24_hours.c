@@ -1,5 +1,5 @@
 /**
-*jack_bauer - makes a whole ass clock
+*functionNAME - makes a whole ass clock
 *@a: hours of ten digits
 *@b: hours of single digits
 *@c: minutes of ten digits
@@ -8,7 +8,7 @@
 */
 
 #include "main.h"
-int jack_bauer(void)
+int functionNAME(void)
 {
 
 int a, b, c, d;
