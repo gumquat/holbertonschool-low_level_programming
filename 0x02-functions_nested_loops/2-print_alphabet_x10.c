@@ -15,7 +15,7 @@ while (i < 10)
 letter = 'a';
 while (letter <= 'z')
 {
-putchar(letter);
+_putchar(letter);
 letter++;
 }
 _putchar('\n');
