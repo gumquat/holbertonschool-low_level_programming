@@ -32,7 +32,7 @@ else
 		{
 			printf("%d", n);
 			printf("\n");
-		}i
+		}
 		else
 		{
 			printf("\n");
