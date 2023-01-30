@@ -12,13 +12,13 @@ if (n <= 98)
 {
 	for (; n <= 98; n++)
 	{
-		printf("%d", n);
-		printf ("\n");
+		_putchar("%d", n);
+		_putchar("\n");
 		break;
 	}
 	else
 	{
-		printf("%d, ", n);
+		_putchar("%d, ", n);
 	}
 }
 }
@@ -28,13 +28,13 @@ else
 	{
 		if (n ==98)
 		{
-			printf("%d", n);
-			printf("\n");
+			_putchar("%d", n);
+			_putchar("\n");
 			break;
 		}
 		else
 		{
-			printf("%d, ", n);
+			_putchar("%d, ", n);
 		}
 	}
 }
