@@ -7,8 +7,8 @@
 
 int add(int a, int b)
 {
-int a, b;
-char result;
-char *= (a + b);
+int a, b, sum;
+sum = (a + b);
+_putchar ('0' + sum);
 return (0);
 }
