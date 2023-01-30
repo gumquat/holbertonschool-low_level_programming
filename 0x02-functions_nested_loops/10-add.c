@@ -5,11 +5,10 @@
 
 #include "main.h"
 
-int add(void)
+int add(int a, int b)
 {
-int a;
-
-a = add(89, 9);
-printf("%d\n", n);
+int a, b;
+char result;
+char *= (a + b);
 return (0);
 }
