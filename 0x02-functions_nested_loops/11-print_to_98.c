@@ -15,9 +15,10 @@ if (n == 98)
 {	
 _putchar(n + '0');
 _putchar('\n');
+}
 else
 {
-_putchar(n + " ,");
+_putchar(n + ' ,');
 }
 }
 }
@@ -33,7 +34,7 @@ _putchar('\n');
 else
 {
 
-_putchar(n + " ,");
+_putchar(n + ' ,');
 }
 }
 }
