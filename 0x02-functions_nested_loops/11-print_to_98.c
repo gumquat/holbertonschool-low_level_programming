@@ -35,7 +35,7 @@ else
 		}
 		else
 		{
-			printf("\n");
+			printf("%d, ", n);
 		}
 	}
 }
