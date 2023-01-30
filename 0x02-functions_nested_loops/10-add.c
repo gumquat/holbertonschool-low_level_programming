@@ -1,6 +1,7 @@
 /**
 *add - description HERE
 *@a: number
+*@b: number
 *Return: data
 */
 
