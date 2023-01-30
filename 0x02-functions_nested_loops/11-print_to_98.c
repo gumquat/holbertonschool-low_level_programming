@@ -12,13 +12,12 @@ if (n <= 98)
 {
 	for (; n <= 98; n++)
 	{
-		_putchar("%d", n);
-		_putchar("\n");
-		break;
+		_putchar();
+		_putchar();
 	}
 	else
 	{
-		_putchar("%d, ", n);
+		_putchar();
 	}
 }
 }
@@ -28,13 +27,12 @@ else
 	{
 		if (n ==98)
 		{
-			_putchar("%d", n);
-			_putchar("\n");
-			break;
+			_putchar();
+			_putchar();
 		}
 		else
 		{
-			_putchar("%d, ", n);
+			_putchar();
 		}
 	}
 }
