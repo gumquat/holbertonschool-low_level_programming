@@ -1,12 +1,11 @@
 /**
 *times_table - description HERE
-*@VARIABLE NAME: description
 *Return: nothin
 */
 
 #include "main.h"
 
-int times_table(void)
+void times_table(void)
 {
 int x, y, z, u, d;
 for (x = 0; x <= 0; x++)
