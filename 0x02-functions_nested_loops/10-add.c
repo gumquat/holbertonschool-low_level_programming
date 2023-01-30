@@ -1,5 +1,6 @@
 /**
 *add - description HERE
+*@a: number
 *Return: data
 */
 
@@ -8,7 +9,7 @@
 int add(int a, int b)
 {
 int sum;
-sum = (a + b);
+sum = add(89, 9);
 _putchar (sum + '0');
 return (sum);
 }
