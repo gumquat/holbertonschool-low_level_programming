@@ -1,5 +1,6 @@
 /**
 *print_numbers - PUT DESCRIPTION HERE
+*@i: is a variable
 *Return: nothin
 */
 
