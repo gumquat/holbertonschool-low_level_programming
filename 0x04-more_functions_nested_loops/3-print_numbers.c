@@ -3,8 +3,7 @@
 *Return: main always 0
 */
 
-#include <stdio.h>
-#include <string.h>
+#include "main."
 
 void print_numbers(void)
 {
@@ -12,6 +11,6 @@ void print_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar(i);
+		_putchar(i);
 	}
 }
