@@ -1,6 +1,6 @@
 /**
 *_isdigit - checks for digit
-@c: c is a variable that holds numbers
+*@c: c is a variable that holds numbers
 *Return: 1 if digit
 */
 #include "main.h"
