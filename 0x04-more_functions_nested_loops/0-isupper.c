@@ -1,7 +1,7 @@
 /**
-*isupper - checks if upper case
-*@n: variable
-*Return: 0 or 1 or other data HERE
+*_isupper - checks if upper case
+*@c: variable
+*Return: 1 if upper case
 */
 
 #include "main.h"
