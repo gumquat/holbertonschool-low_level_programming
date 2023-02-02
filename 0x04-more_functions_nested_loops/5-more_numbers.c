@@ -1,5 +1,7 @@
 /**
 *more_numbers - description HERE
+*@i: an integer
+*@n: an integer
 *Return: 0
 */
 
