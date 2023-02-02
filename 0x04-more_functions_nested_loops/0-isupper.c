@@ -1,5 +1,5 @@
 /**
-*isupper - checks if upper case 
+*isupper - checks if upper case
 *@variableNAME: variable description HERE
 *Return: 0 or 1 or other data HERE
 */
@@ -9,7 +9,7 @@
 int _isupper(int c)
 {
 
-	if (c >= 'A'&& i <= 'Z')
+	if (c >= 'A' && i <= 'Z')
 		return (1);
 
 return (i);
