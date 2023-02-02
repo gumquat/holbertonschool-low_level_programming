@@ -15,8 +15,8 @@ int n = 0;
 		for (i = 0; i <= 14; i++)
 		{
 			_putchar(i + '0');
-			n++;
 		}
 		_putchar('\n');
+		n++;
 	}
 }
