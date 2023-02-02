@@ -1,5 +1,5 @@
 /**
-*add - my first multiplication
+*mul - my first multiplication
 *@a: number
 *@b: number
 *Return: an integer
