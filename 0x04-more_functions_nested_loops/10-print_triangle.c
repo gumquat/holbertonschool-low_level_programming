@@ -22,6 +22,7 @@ if (size > 0)
 			a--;
 		}
 			a = 0;
+
 			while (a < i + 1);
 			{
 				_putchar('#');
