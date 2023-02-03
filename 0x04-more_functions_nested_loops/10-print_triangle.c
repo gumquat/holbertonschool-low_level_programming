@@ -1,14 +1,15 @@
 /**
 *print_triangle - description HERE
 *@size: variable description HERE
-*Return: 0
 */
 
 #include "main.h"
 
 void print_triangle(int size)
 {
-int i, a;
+
+int i;
+int a;
 
 if (size > 0)
 {
@@ -17,19 +18,18 @@ if (size > 0)
 	{
 		a = size - 1;
 		while (a > i)
-		{
-			_putchar(' ');
-			a--;
-		}
+	{
+		_putchar(' ');
+		a--;
+	}
 			a = 0;
-
 			while (a < i + 1);
 			{
-				_putchar('#');
-				a++;
+			_putchar('#');
+			a++;
 			}
-		_putchar('\n');
-		i++;
+	_putchar('\n');
+	i++;
 	}
 }
 else
