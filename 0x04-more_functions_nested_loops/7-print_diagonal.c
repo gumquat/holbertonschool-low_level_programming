@@ -15,14 +15,13 @@ if (n > 0)
 {
 	while (i < n)
 	{
-	_putchar('\');
+	_putchar('\\');
 	_putchar('\n');
 	i++;
-	for (a = 0; a <= i; c++)
-	{
+	for (a = 0; a <= i; a++)
+	}
 	_putchar(' ');
-	}
-	}
+}
 }
 else
 {
