@@ -18,7 +18,7 @@ for (i = 1; i <= 100; i++)
 		printf("Fizz");
 	else if (n % 5 == 0)
 		printf("Buzz");
-	else 
+	else
 		printf("%d", n);
 	if (n != 100)
 		printf(" ");
