@@ -8,17 +8,20 @@
 void fizz_buzz(void)
 {
 
-int i = 1;
+int i;
 
 for (i = 1; i <= 100; i++)
 {
-if(((i%3)||(i%5))== 0)
-printf("number= %d FizzBuzz\n", i);
-else if((i%3)==0)
-printf("number= %d Fizz\n", i);
-else if((i%5)==0)
-printf("number= %d Buzz\n", i);
-else
-printf("number= %d\n",i);
+	if (n % 15 == 0)
+		printf("FizzBuzz");
+	else if (n % 3 == 0)
+		printf("Fizz");
+	else if (n % 5 == 0)
+		printf("Buzz");
+	else 
+		printf("%d", n);
+	if (n != 100)
+		printf(" ");
 }
+printf("\n");
 }
