@@ -1,5 +1,6 @@
 /**
 *fizz_buzz - description HERE
+*@i: integer number thing
 *Return: 0
 */
 
