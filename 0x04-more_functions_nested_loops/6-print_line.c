@@ -1,7 +1,7 @@
 /**
 *print_line - description HERE
 *@n: variable description HERE
-*Return: 0
+*Return: always 0
 */
 
 #include "main.h"
