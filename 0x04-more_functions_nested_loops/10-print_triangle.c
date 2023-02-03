@@ -21,16 +21,18 @@ if (size > 0)
 			_putchar(' ');
 			a--;
 		}
-		a = 0;
-		while (a < i + 1);
-		{
-			_putchar('#');
-			a++;
-		}
+			a = 0;
+			while (a < i + 1);
+			{
+				_putchar('#');
+				a++;
+			}
 		_putchar('\n');
 		i++;
-}
+	}
 }
 else
+{
 _putchar('\n');
+}
 }
