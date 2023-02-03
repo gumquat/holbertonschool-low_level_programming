@@ -1,5 +1,5 @@
 /**
-*fizz_buzz - description HERE
+*main - description HERE
 *Return: 0
 */
 
