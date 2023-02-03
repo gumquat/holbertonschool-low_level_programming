@@ -6,7 +6,7 @@
 
 #include "main.h"
 
-void prnt_line(void)
+void print_line(void)
 {
 
 	int n;
