@@ -5,7 +5,7 @@
 
 #include "main.h"
 
-void fizz_buzz(void)
+int fizz_buzz(void)
 {
 
 int i;
