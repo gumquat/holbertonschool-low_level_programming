@@ -18,12 +18,12 @@ if (size > 0)
 	{
 		a = size - 1;
 		while (a > i)
-	{
+		{
 		_putchar(' ');
 		a--;
-	}
+		}
 			a = 0;
-			while (a < i + 1);
+			while (a < i + 1)
 			{
 			_putchar('#');
 			a++;
