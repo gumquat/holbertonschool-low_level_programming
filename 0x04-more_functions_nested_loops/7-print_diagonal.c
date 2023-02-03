@@ -13,19 +13,18 @@ int a = 0;
 
 if (n > 0)
 {
-	while (i < n)
+	for (i = 0; i < n; i++)
 	{
+		for (a = 0; a < i; a++)
+		{
+		_putchar(' ');
+		}
 	_putchar('\\');
 	_putchar('\n');
-	i++;
-	for (a = 0; a <= i; a++)
-	{
-	_putchar(' ');
-	}
 	}
 }
 else
 {
-	_putchar('\n');
+_putchar('\n');
 }
 }
