@@ -1,6 +1,5 @@
 /**
 *print_square - description HERE
-*@i: variable description HERE
 *@size: size of square
 *Return: 0
 */
