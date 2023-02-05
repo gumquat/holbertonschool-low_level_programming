@@ -1,10 +1,11 @@
 /**
 *swap - swaps the values of two integers using pointers
-*@i: an integer
-*return: nothing
+*@a; integer
+*@b: integer
+*return: void
 */
 
-int swap(int *a, int *b)
+void swap(int *a, int *b)
 {
 int temp = *a;
 *a = *b;
