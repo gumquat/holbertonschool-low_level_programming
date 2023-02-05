@@ -4,8 +4,6 @@
 *Return: 0 or 1 or other data HERE
 */
 
-#include "main.h"
-
 void reset_to_98(int *n)
 {
 // the value i am going to point to and set to 98	
