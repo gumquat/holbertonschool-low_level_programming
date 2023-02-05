@@ -1,19 +1,19 @@
 /**
 *_strlen - returns length of a string pointed to
-*@i: gonna hold that length
+*@length: gonna hold that length
 *Return: something
 */
 
 #include "main.h"
 
-int _strlen (char *s)
+int _strlen(char *s)
 {
-int i = 0;
+int length = 0;
 
-while (s[i] != '/0')
+while (s[length] != '/0')
 {
-i++;
+length++;
 }
 
-return (i);
+return (length);
 }
