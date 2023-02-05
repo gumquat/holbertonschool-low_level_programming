@@ -1,6 +1,6 @@
 /**
 *_strlen - returns length of a string pointed to
-*@i: variable description HERE
+*@i: gonna hold that length
 *Return: something
 */
 
@@ -8,6 +8,12 @@
 
 int _strlen (char *s)
 {
+int i = 0;
 
-	return (0 or something else HERE);
+while (*s != '/0')
+{
+i++;
+}
+
+return (0);
 }
