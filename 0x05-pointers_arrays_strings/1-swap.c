@@ -1,6 +1,6 @@
 /**
 *swap_int - swaps the values of two integers using pointers
-*@a; integer
+*@a: integer
 *@b: integer
 *return: void
 */
