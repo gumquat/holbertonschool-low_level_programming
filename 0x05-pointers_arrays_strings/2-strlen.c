@@ -1,6 +1,6 @@
 /**
 *_strlen - returns length of a string pointed to
-*@length: gonna hold that length
+*@s: oh yeah baby the letter s 
 *Return: something
 */
 
