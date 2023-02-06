@@ -2,8 +2,9 @@
 *print_array - prints array
 *@a: array
 *@n: number of elements in the array
+*@x: integer
 */
-
+#include <stdio.h>
 #include "main.h"
 
 void print_array(int *a, int *n)
