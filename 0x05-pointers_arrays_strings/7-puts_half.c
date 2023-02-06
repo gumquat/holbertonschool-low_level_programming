@@ -27,7 +27,7 @@ else
 length = i / 2;
 }
 
-for (; length < i; length++)
+for (; length < i; length++ )
 {
 _putchar(str[length]);
 }
