@@ -1,7 +1,7 @@
 /*
-* puts_half - prints last half of a string
-* @i: integer
-* Return: nothing
+*puts_half - prints last half of a string
+*@len: integer
+*Return: nothing
 */
 
 #include "main.h"
