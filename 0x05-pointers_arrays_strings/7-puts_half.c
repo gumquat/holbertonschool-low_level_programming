@@ -24,7 +24,6 @@ len = i / 2;
 else
 {
 len = (i - 1) / 2;
-len += 1;
 }
 
 for (; len < i; len++)
