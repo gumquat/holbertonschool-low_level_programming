@@ -16,7 +16,7 @@ a++
 
 for (i = 0; i <j; i += 2)
 {
-_putchar(Str[i]);
+_putchar(str[i]);
 }
 _putchar('\n');
 }
