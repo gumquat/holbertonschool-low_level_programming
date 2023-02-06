@@ -1,4 +1,4 @@
-/*
+/**
 *puts_half - prints last half of a string
 *@len: integer
 *Return: nothing
@@ -8,28 +8,24 @@
 
 void puts_half(char *str)
 {
+int len = 0;
+char *y = str;
+int a;
 
-int i = 0;
-int len;
-
-while (str[i] != '\0')
+while (*y != '\0')
 {
+y++;
 len++;
 }
 
-if (i % 2 == 0)
+if (len % 2 == 0)
 {
-len = i / 2;
-}
-else
-{
-len = (i - 1) / 2;
-len += 1;
+a = (len + 1) / 2;
 }
 
-for (; len < i; len++)
+for (; a < len; a++)
 {
-_putchar(str[len]);
+	_putchar(str[n]);
 }
 _putchar('\n');
 }
