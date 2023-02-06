@@ -20,6 +20,10 @@ len++;
 
 if (len % 2 == 0)
 {
+a = len / 2;
+}
+else
+{
 a = (len + 1) / 2;
 }
 
