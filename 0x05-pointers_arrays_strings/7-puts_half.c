@@ -20,7 +20,6 @@ length++;
 if (i % 2 == 1)
 {
 length = (i - 1) / 2;
-length += 1;
 }
 else
 {
