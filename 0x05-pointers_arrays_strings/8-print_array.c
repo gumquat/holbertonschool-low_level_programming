@@ -20,5 +20,5 @@ for (x = 0; x < n; x++)
 		printf(", ");
 		}
 	}
-_putchar('\n');
+printf('\n');
 }
