@@ -12,7 +12,7 @@ int a = 0;
 
 while(str[a] != '\0')
 {
-a++
+a++;
 }
 
 for (i = 0; i < a; i += 2)
