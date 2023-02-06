@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include "main.h"
 
-void print_array(int *a, int *n)
+void print_array(int *a, int n)
 {
 int x = 0;
 
