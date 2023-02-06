@@ -1,6 +1,6 @@
 /**
 *puts_half - prints last half of a string
-*@len: integer
+*@str: striiiing
 *Return: nothing
 */
 
