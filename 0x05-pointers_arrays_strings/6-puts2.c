@@ -4,7 +4,7 @@
 *Return: Nothing
 */
 
-void puts(char *str)
+void puts2(char *str)
 {
 int i;
 int a = 0;
