@@ -25,7 +25,7 @@ a = (len + 1) / 2;
 
 for (; a < len; a++)
 {
-	_putchar(str[n]);
+	_putchar(str[a]);
 }
 _putchar('\n');
 }
