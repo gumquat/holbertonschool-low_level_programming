@@ -1,7 +1,7 @@
 /*
-*puts_half - prints last half of a string
-*@i: integer
-*Return: nothing
+* puts_half - prints last half of a string
+* @i: integer
+* Return: nothing
 */
 
 #include "main.h"
@@ -19,7 +19,7 @@ len++;
 
 if (i % 2 == 0)
 {
-len = i /2;
+len = i / 2;
 }
 else
 {
