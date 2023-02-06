@@ -24,11 +24,12 @@ len = i / 2;
 else
 {
 len = (i - 1) / 2;
+len += 1;
 }
 
 for (; len < i; len++)
 {
 _putchar(str[len]);
-_putchar('\n');
 }
+_putchar('\n');
 }
