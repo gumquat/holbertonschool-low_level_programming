@@ -6,6 +6,8 @@
 *Return: compounded string inside Dest
 */
 
+#include "holberton.h"
+
 char *_strncat(char *dest, char *src, int n)
 {
 
