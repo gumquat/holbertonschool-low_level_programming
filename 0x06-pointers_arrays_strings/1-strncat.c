@@ -17,7 +17,7 @@ index++;
 dest_len++;
 }
 
-	for(index = 0; src[index] && index < n; index++)
+	for (index = 0; src[index] && index < n; index++)
 		{
 		dest[dest_len] = src[index];
 		dest_len++;
