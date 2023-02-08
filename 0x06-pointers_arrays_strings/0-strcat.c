@@ -19,6 +19,7 @@ while (src[pp] != 0)
 {
 dest[butt] = src[pp];
 butt++;
+pp++;
 }
 dest[butt] = '\0';
 return (dest);
