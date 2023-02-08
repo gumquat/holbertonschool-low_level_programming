@@ -13,7 +13,6 @@ int dest_len = 0;
 
 while (dest[index])
 {
-index++;
 dest_len++;
 }
 
