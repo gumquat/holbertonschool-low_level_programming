@@ -6,8 +6,6 @@
 *Return: compounded string inside Dest
 */
 
-#include "holberton.h"
-
 char *_strncat(char *dest, char *src, int n)
 {
 
@@ -18,11 +16,13 @@ int dest_len = 0;
 	{
 		index++;
 		dest_len++;
+		n++;
 	}
-		for (index = 0; src[index] && index < n; index++)
-		{
-			dest[dest_len] = src[index];
-			dest_len++;i
-		}
-		return (dest);
+
+	for (index = 0; src[index] && index < n; index++)
+	{
+		dest[dest_len++] = src[index];
+	}
+	
+return (dest);
 }
