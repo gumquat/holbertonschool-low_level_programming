@@ -2,6 +2,7 @@
 *_strncat - adds a string to the end of another string
 *@dest: destination for the final string
 *@src: the source string
+*@n: the number of bytes from src to be put into dest
 *Return: compounded string inside Dest
 */
 
