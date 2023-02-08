@@ -15,7 +15,6 @@ int dest_len = 0;
 	while (dest[index])
 	{
 		index++;
-		dest_len++;
 		n++;
 	}
 
@@ -24,6 +23,5 @@ int dest_len = 0;
 		dest[n] = src[index];
 		n++;
 	}
-	
-return (dest);
+	return (dest);
 }
