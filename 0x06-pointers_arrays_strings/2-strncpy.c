@@ -22,7 +22,10 @@ for (index = 0; scr[index] && index < n; index++)
 dest[index] = src[index];
 }
 
-_putchar ('\0');
+for(index = src_len; index < n; index++)
+{
+dest[index] = '\0';
+}
 
 return (dest);
 }
