@@ -1,7 +1,7 @@
 /**
 *reverse_array - reverses a array
 *@a: points to an array
-*@n: integer representing number of things in an array 
+*@n: integer representing number of things in an array
 *Return: reversed array
 */
 
