@@ -8,9 +8,9 @@
 void reverse_array(int *a, int n)
 {
 	int temp;
-	int index;
+	int index = 0;
 	
-	index = n -1;
+	index = n - 1;
 
 	while (index >= n / 2)
 	{	
