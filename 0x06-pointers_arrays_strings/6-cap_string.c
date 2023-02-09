@@ -15,7 +15,7 @@ while (str[index])
 	{
 
 	if (str[index - 1] == ' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' || index == 0)
-	str[idex] -= 32;
+	str[index] -= 32;
 	index++;
 	}
 }
