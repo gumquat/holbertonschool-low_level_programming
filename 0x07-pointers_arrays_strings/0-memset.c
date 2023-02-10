@@ -6,6 +6,8 @@
 *Returns: a pointer to the memory asrea s
 */
 
+#include "main.h"
+
 char *_memset(char *s, char b, unsigned int n)
 {
 unsigned int i;
