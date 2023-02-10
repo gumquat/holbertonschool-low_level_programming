@@ -13,12 +13,12 @@ char *leet(char *str)
 	numbers[10] = {'4', '3', '0', '7', '1'];
 	int index = 0;
 
-	while (*s)
+	while (s[index])
 	{
 		for (index = 0; index < 5; index++)
 		{
-			if (*str == letters[index] || *str == letters[index] - 32)
-			*str = numbers[index];
+			if (str == letters[index] || str == letters[index] - 32)
+			str = numbers[index];
 		}
 	}
 return (str);
