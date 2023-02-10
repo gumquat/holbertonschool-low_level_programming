@@ -31,6 +31,5 @@ while (str[index])
 	str[index] -= 32;
 	index++;
 	}
-	}
 return (str);
 }
