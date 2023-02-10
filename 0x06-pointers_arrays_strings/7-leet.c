@@ -1,9 +1,7 @@
 /**
-*
-*
-*
-*
-*
+*leet - makes numbers into funny le meme word
+*@s: string 
+*Return: points to string
 */
 
 char *leet(char *str)
