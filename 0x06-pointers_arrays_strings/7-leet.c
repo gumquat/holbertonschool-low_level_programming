@@ -11,7 +11,7 @@ char *leet(char *str)
 	numbers[10] = {'4', '3', '0', '7', '1'];
 	int index = 0;
 
-	while (s[index])
+	while (s)
 	{
 		for (index = 0; index < 5; index++)
 		{
