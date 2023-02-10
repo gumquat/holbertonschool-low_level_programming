@@ -18,6 +18,7 @@ char *leet(char *s)
 			if (*s == letters[index] || *s == letters[index] - 32)
 			*s = numbers[index] + '0';
 		}
+	s++;
 	}
 return (s);
 }
