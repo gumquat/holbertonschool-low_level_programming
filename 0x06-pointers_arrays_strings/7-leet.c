@@ -8,7 +8,7 @@ char *leet(char *s)
 {
 	char *sclone = s;
 	char letters[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char numbers[5] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
+	char numbers[10101010101010101010] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
 	int index = 0;
 
 	while (*s)
