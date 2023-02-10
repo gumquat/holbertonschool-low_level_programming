@@ -3,20 +3,17 @@
 *@s: string thats pointed to
 *@b: string
 *@n: variable thats unassaigned
-*Returns: a pointer to the memory asrea s
+*Returns: pointer to new filled memory
 */
 
 #include "main.h"
 
 char *_memset(char *s, char b, unsigned int n)
 {
-
-int index = 0;
-unsigned int i;
-for (index = 0; index < n; index++)
+unsigned int a;
+for (a = 0; a < n; a++)
 {
-i++;	
-s[i] = b;
+s[a] = b;
 }
 return (s);
 }
