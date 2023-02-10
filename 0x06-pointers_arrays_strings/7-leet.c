@@ -4,20 +4,20 @@
 *Return: points to string
 */
 
-char *leet(char *str)
+char *leet(char *s)
 {
-
-	letters[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	numbers[10] = {'4', '3', '0', '7', '1'];
+	
+	char letters[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char numbers[5] = {'4', '3', '0', '7', '1'];
 	int index = 0;
 
-	while (s)
+	while (*s)
 	{
 		for (index = 0; index < 5; index++)
 		{
-			if (str == letters[index] || str == letters[index] - 32)
-			str = numbers[index];
+			if (*s == letters[index] || *s == letters[index] - 32)
+			s = numbers[index] + '0';
 		}
 	}
-return (str);
+return (s);
 }
