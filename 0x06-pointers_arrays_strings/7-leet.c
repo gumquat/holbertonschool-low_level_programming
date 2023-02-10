@@ -21,5 +21,5 @@ char *leet(char *str)
 			*str = numbers[index];
 		}
 	}
-return (str);	
+return (str);
 }
