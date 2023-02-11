@@ -5,7 +5,7 @@
 *Return: 0 is success
 */
 
-cahr *_strchr(char *s, cahr c)
+char *_strchr(char *s, char c)
 {
 	int i;
 
