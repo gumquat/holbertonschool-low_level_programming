@@ -1,5 +1,5 @@
 /**
- *_strpn - gets the length of a prefix substring
+ *_strspn - gets the length of a prefix substring
  *@s: input
  *@accept: input
  *Return: 0 is success
