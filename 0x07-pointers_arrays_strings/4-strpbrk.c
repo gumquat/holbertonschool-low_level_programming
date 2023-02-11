@@ -5,6 +5,8 @@
 *Return: pointer to s taht matches bytes in accept
 */
 
+#include "main.h"
+
 char *_strpbrk(char *s, char *accept)
 {
 	int i;
@@ -20,5 +22,5 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-return(0);
+return (0);
 }
