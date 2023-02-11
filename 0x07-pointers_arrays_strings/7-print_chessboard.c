@@ -4,17 +4,17 @@
 *Return: cool ah chessboard
 */
 
-#include "holberton.h"
+#include "main.h"
 
 void print_chessboard(char (*a)[8])
 {
-	int i, c;
+	int i, b;
 
 	for (i = 0; i < 8; i++)
 	{
-		for (c = 0; c < 8; c++)
+		for (b = 0; b < 8; b++)
 		{
-			_putchar(a[i][c]);
+			_putchar(a[i][b]);
 		}
 		_putchar('\n');
 	}
