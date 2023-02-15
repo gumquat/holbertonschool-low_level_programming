@@ -13,12 +13,10 @@ void _print_rev_recursion(char *s)
 	{
 		return;	
 	}
-	else
-	{
-		s++;
-		_prints_rev_recursion(s);
-		s--;
-		_putchar(*s);
-	}
+
+	s++;
+	_prints_rev_recursion(s);
+	s--;
+	_putchar(*s);
 
 }
