@@ -1,8 +1,8 @@
 /**
- *print_rev_recursion - prints string in reverse
- *@s: string getting passed thru
- *Return: Silly little string haha reverse reverse!
- */
+*_print_rev_recursion - prints string in reverse
+*@s: string getting passed thru
+*Return: Silly little string haha reverse reverse!
+*/
 
 #include "main.h"
 
