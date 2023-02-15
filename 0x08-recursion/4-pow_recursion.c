@@ -1,8 +1,8 @@
 /**
- * _pow_recursion - returns the value x raised to the power y
+ *_pow_recursion - returns the value x raised to the power y
  *@x: integer
  *@y: integer
- *Returns: sum of x to power of y
+ *Return: sum of x to power of y
  */
 
 #include "main.h"
