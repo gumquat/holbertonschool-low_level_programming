@@ -1,12 +1,12 @@
 /**
-*_factorial - returns the factorial of a given number
+*factorial - returns the factorial of a given number
 *@n: integer
 *Return 0 or 1
 */
 
 #include "main.h"
 
-int _factorial(int n)
+int factorial(int n)
 {
 
 	if (n < 0)
