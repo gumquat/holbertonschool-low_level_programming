@@ -1,8 +1,12 @@
 /**
  *_sqrt_recursion - returns the natural square root of a number
  *@n: integer
+ *@i: integer
  *Return: sum
  */
+
+#include "main.h"
+#include <stdio.h>
 
 /*prototypes on line below*/
 int _sqrt(int n, int i);
