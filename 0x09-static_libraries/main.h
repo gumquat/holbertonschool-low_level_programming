@@ -1,5 +1,7 @@
 #ifndef _PUTCHAR
+#ifndef MAIN_H
 #define _PUTCHAR
+#define MAIN_H
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(char c);
