@@ -5,7 +5,7 @@
  *Return: always nothin
  */
 
-int main (int argc, *argc[])
+int main (int argc, *argv[])
 {
 (void) argv;
 printf("%s\n", argc - 1);
