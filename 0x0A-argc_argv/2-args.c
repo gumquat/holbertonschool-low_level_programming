@@ -4,11 +4,11 @@
  *@argv: arguement vector
  *Return 0 as always
  */
- 
+
 #include "main.h"
 #include <stdio.h>
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 
 int index;
