@@ -17,7 +17,7 @@ int var1 = 0;
 int var2 = 0;
 int sum = 0;
 
-	if (argc < 1)
+	if (argc < 1 || /*contains no number*/)
 	{
 	printf("0\n");
 	}
@@ -30,10 +30,9 @@ int sum = 0;
 				printf("Error\n");
 				return (1);
 			}			
-		}
 		sum += atoi(argv[index]);
+		}
 	}
 printf("%d\n", sum);
 return (0);
-
 }
