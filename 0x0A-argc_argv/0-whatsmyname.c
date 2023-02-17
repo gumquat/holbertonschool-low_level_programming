@@ -8,7 +8,7 @@
 #include "main.h"
 #include <stdio.h>
 
-void main (int argc, char *argv[])
+void main(int argc, char *argv[])
 {
 	(void) argc;
 	printf("%s\n", argv[0]);
