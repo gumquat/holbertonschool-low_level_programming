@@ -11,10 +11,11 @@
 int main(int argc, char *argv[])
 {
 
-int var1, var2 = 0;
+int var1 = 0;
+int var2 = 0;
 int sum = 0;
 
-if (argc < 3)
+if (argc != 2)
 {
 	printf("Error\n");
 	return (1);
