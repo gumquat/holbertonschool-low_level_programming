@@ -13,26 +13,21 @@ int main (int argc, char *argv[])
 {
 
 int index;
-int var1 = 0;
-int var2 = 0;
+int var = 0;
 int sum = 0;
 
-	if (argc < 1 || /*contains no number*/)
+	for (index = 1; i < argc; index++)
 	{
-	printf("0\n");
-	}
-	else
-	{
-		for (index = 0; index < argc; index++;)
+		for (var = 0; argv[index][var]; d++)
 		{
-			if (argv[index] < 48 || argc[index] > 57)
+			if (argv[index][variable] < '0' || argv[index][var] > '9')
 			{
 				printf("Error\n");
 				return (1);
-			}			
-		sum += atoi(argv[index]);
+			}
 		}
+		sum += atoi(argv[i]);
 	}
-printf("%d\n", sum);
-return (0);
+	printf("%d\n", sum);
+	return (0);
 }
