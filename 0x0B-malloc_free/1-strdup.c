@@ -22,10 +22,10 @@ return (NULL);
 
 while (str[index])
 {
-index++
+index++;
 }
 
-pointer = malloc((sizeof(char) * index) + 1);
+pointer = malloc((sizeof(char) * index) +1);
 
 if (pointer == NULL)
 {
@@ -35,10 +35,10 @@ return (NULL);
 while (counter < index)
 {
 pointer[counter] = str[counter];
-counter++
+counter++;
 }
 
-s[counter] = '\0';
+pointer[counter] = '\0';
 return (pointer);
 
 }
