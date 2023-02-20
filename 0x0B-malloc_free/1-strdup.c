@@ -15,17 +15,17 @@ int index;
 int counter;
 char *pointer;
 
+if (str == NULL)
+{
+return (NULL);
+}
+
+while (str[index])
+{
+index++;
+}
+
 pointer = malloc((sizeof(char) * index) + 1);
-
-	if (str == NULL)
-	{
-	return (NULL);
-	}
-
-	while (str[index])
-	{
-	index++;
-	}
 
 	while (counter < index)
 	{
