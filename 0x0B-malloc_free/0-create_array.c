@@ -22,9 +22,9 @@ if (size == 0)
 pointer = malloc(size * sizeof(char));
 
 for (index = 0; index < size; index++)
-	{
-		s[i] = c;		
-	}	
+{
+s[i] = c;
+}
 
 return (pointer);
 
