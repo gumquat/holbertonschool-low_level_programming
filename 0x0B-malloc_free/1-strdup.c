@@ -27,7 +27,7 @@ char *pointer;
 
 pointer = malloc((sizeof(char) * index) + 1);
 
-	if (s == NULL)
+	if (pointer == NULL)
 	{
 	return (NULL);
 	}
