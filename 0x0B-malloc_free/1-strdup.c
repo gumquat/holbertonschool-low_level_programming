@@ -11,34 +11,34 @@
 char *_strdup(char *str)
 {
 
-int index;
 int counter;
+int index;
 char *pointer;
 
-	if (str == NULL)
-	{
-	return (NULL);
-	}
+if (str == NULL)
+{
+return (NULL);
+}
 
-	while (str[index])
-	{
-	index++;
-	}
+while (str[index])
+{
+index++
+}
 
 pointer = malloc((sizeof(char) * index) + 1);
 
-	if (pointer == NULL)
-	{
-	return (NULL);
-	}
+if (pointer == NULL)
+{
+return (NULL);
+}
 
-	while (counter < index)
-	{
-	pointer[counter] = str[counter];
-	counter++;
-	}
+while (counter < index)
+{
+pointer[counter] = str[counter];
+counter++
+}
 
-pointer[index] = '\0';
+s[counter] = '\0';
 return (pointer);
 
 }
