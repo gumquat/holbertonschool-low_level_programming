@@ -2,7 +2,7 @@
 *alloc_grid - pointer to a pointer.
 *@width: width of array
 *@height: height of the array
-*Return: returns a pointer ro a 2 dimensional array of integers
+*Return: returns a pointer to a 2 dimensional array of integers
 */
 
 #include "main.h"
