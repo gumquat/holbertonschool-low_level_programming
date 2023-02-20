@@ -22,6 +22,11 @@ if (size == 0)
 	return (NULL);
 	}
 
+if (pointer == 0)
+	{
+	return (NULL);
+	}
+
 for (index = 0; index < size; index++)
 	{
 	pointer[index] = c;
