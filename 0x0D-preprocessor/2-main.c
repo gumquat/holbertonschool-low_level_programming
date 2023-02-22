@@ -1,6 +1,7 @@
 /*
  *main - this prints the file name of the file
  *that compiles it (followed by a new line)
+ *Return: zilch
  */
 
 #include <stdio.h>
