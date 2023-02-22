@@ -5,7 +5,7 @@
 *Return: 0 if the string are the same
 */
 
-#include "holberton.h"
+#include "main.h"
 
 int _strcmp(char *s1, char *s2)
 {
