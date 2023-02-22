@@ -10,7 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-(void) argv;
-printf("%d\n", argc - 1);
-return (0);
+	/*this first line makes the function ignore an error*/
+	(void) argv;
+	/*this line shows that 
+	 *
+	 */
+	printf("%d\n", argc - 1);
+	return (0);
 }
