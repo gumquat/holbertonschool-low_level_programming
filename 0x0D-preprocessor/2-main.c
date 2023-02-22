@@ -1,14 +1,10 @@
-/*
- *main - this prints the file name of the file
+/**
+ * main - prints the file name of the program
  *
- *that compiles it (followed by a new line)
- *Return: 0
+ * Return: always 0
  */
-
-#include <stdio.h>
-
 int main(void)
 {
-	printf{"%s\n", __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
