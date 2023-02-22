@@ -1,7 +1,7 @@
 #ifndef _HEADER_
 #define _HEADER_
 
-#define ABS() (x%1)
+#define ABS(x) {return x > 0 ? n : -n; }
 
 
 #endif
