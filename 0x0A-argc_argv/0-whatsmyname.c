@@ -16,10 +16,9 @@ int main(int argc, char *argv[])
 {
 	/*this void call makes the fuction ignore an error*/
 	(void) argc;
-	/*this line will print the STRING pointed to by argv
-	 *you'll notice that it states argv[0], as it only needs
-	 *the address of the first 'spot' in the string to know
-	 *the size and addresses of the entire string when called*/
+	/*this line will print the name of the string pointed to by
+	 *argv you'll notice that it states argv[0], as that is
+	 *where the name of the string is stored*/
 	printf("%s\n", argv[0]);
 	return (0);
 }
