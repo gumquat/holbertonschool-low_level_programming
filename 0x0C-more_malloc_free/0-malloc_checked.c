@@ -19,7 +19,7 @@ pointer = malloc(b);
 
 /*this checks if the pointer is NULL*/
 /* and if it is exit's with a status value of 98*/
-if (p == NULL)
+if (pointer == NULL)
 	exit(98);
 
 return (pointer);
