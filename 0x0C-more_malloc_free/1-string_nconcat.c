@@ -1,9 +1,9 @@
 /**
- *
- *
- *
- *
- *
+ *string_nconcat - concatonates two strings using pointers
+ *@s1: string 1
+ *@s2: string 2
+ *@n: max length of string 2 that can be moved
+ *Return: pointer
  */
 
 #include "main.h"
@@ -35,12 +35,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	bufferLen = s1Len + s2Len;
 
-	pointer = malloc((sizeof(char) * bufferLen) + 1);	
+	pointer = malloc((sizeof(char) * bufferLen) + 1);
 
 	if (pointer == NULL)
 	{
-	return (NULL)
-	}	
+	return (NULL);
+	}
 
 	while (index < bufferLen)
 	{
@@ -53,9 +53,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			pointer[index] = s2[index2];
 			index2++;
 		}
-	
+
 		index++;
-	}	
+	}
 	pointer[index] = '\0';
 	return (pointer);
 }
