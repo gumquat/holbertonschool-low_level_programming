@@ -13,7 +13,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
-	int s1Len, s2Len, bufferLen, index, index2 = 0;
+	int s1Len = 0;
+        int s2Len, bufferLen, index, index2 = 0;
 	char *pointer;
 
 	if (s1 == NULL)
