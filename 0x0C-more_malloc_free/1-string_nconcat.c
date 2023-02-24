@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1Len++;
 
 	while (s2[s2Len])
-		s2Len++:
+		s2Len++;
 
 	bufferLen = s1Len + s2Len;
 
