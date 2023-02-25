@@ -52,7 +52,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*this string fills the rest of the allocated memory with*/
 	/* the string from s2, and makes sure we don't write over the final spot*/
 	/* because we want to put a null character there*/
-	for (index = 0; s2[index] && index < bufferLen; index++)
+	for (index = 0; s2[index] && index <= bufferLen; index++)
 		pointer[s1Len++] = s2[index];
 
 	pointer[s1Len] = '\0';
