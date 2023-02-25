@@ -31,4 +31,5 @@ if (pointer == NULL)
 		pointer[index] = 0;
 		index++;
 	}
+	return (pointer);
 }
