@@ -43,12 +43,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*if our pointer shows that there is no memory there, return NULL*/
 	if (pointer == NULL)
 		return (NULL);
+	/*this line resets s1Len so we can use it as a counter*/
+	/*that iterates through the string in s1 on the next line*/
+	s1Len = 0;
 	/*this line puts the string from s1 into newly allocated memory*/
 	for (index = 0; s1[index]; index++)
 		pointer[s1Len++] = s1[index];
 	/*this string fills the rest of the allocated memory with*/
 	/* the string from s2, and makes sure we don't write over the final spot*/
-	/* ecause we want to put a null character there*/
+	/* because we want to put a null character there*/
 	for (index = 0; s2[index] && index < bufferLen; index++)
 		pointer[s1Len++] = s2[index];
 
