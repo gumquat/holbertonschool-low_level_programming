@@ -1,7 +1,10 @@
-/**_calloc - allocates memory for an array using malloc
- * @nmemb: number of members
- * @size: size of thing passed
- * Return: null on failures*/
+/**
+ * _calloc - allocates memory for an array using malloc
+ *@nmemb: number of members
+ *@size: size of thing passed
+ *
+ * Return: null on failures
+ */
 
 #include "main.h"
 #include <stdio.h>
@@ -14,7 +17,7 @@ int index = 0;
 int length = 0;
 char *pointer;
 
-if (nmem == 0 || size == 0)
+if (nmemb == 0 || size == 0)
 	return (NULL);
 
 length = nmemb * size;
