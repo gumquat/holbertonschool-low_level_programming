@@ -27,5 +27,5 @@ if (pointer == NULL)
 for (index = 0; index < nmemb * size; index++)
 	pointer[index] = 0;
 
-	return (pointer);
+return (pointer);
 }
