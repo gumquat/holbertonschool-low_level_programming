@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 unsigned int index = 0;
 unsigned int length = 0;
-int *pointer;
+char *pointer;
 
 if (nmemb == 0 || size == 0)
 	return (NULL);
@@ -28,7 +28,7 @@ if (pointer == NULL)
 
 	while (index < length)
 	{
-		pointer[index] = 0;
+		pointer[index] = '0';
 		index++;
 	}
 	return (pointer);
