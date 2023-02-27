@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (index = 0; s2[index] && index < bufferLen; index++)
 	{
-		pointer[s1Len++] = s2[index];
+		pointer[s1Len] = s2[index];
 		s2Len++;
 	}
 	pointer[s1Len] = '\0';
