@@ -13,8 +13,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 
-int index = 0;
-int length = 0;
+unsigned int index = 0;
+unsigned int length = 0;
 char *pointer;
 
 if (nmemb == 0 || size == 0)
