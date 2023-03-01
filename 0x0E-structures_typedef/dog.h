@@ -4,11 +4,11 @@
 #include <stdlib.h>
 
 /**
- *dog - make a structure called dog with three values
+ *struct dog - make a structure called dog with three values
  *@owner: owner name
  *@age: dog age
  *@owner: owner name
- *Return: 0
+ *Description: the attributes of dog
  */
 
 typedef struct dog
