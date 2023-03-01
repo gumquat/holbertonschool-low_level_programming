@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef _HEADER_
+#define _HEADER__
 #include <stdio.h>
 #include <stdlib.h>
 
