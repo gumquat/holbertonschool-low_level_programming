@@ -7,7 +7,7 @@
  *struct dog - make a structure called dog with three values
  *@owner: owner name
  *@age: dog age
- *@owner: owner name
+ *@name: dog name
  *Description: the attributes of dog
  */
 
