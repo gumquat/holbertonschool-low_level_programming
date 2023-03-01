@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include "dog.h"
 
-int main (void)
+int main(void)
 {
 struct dog dog_t;
 
