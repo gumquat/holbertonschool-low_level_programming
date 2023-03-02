@@ -25,14 +25,14 @@ int _strlen(char *str)
 /**
  *_strcopy - copies a string into a buffer pointed at by dest
  * @dest: buffer destination for copied string
- * @srs: source string
+ * @src: source string
  * Return: copied string
  */
 char *_strcopy(char *dest, char *src)
 {
 	int index = 0;
 
-	while(src[index++])
+	while (src[index++])
 		dest[index] = src[index];
 
 	dest[index] = '\0';
