@@ -4,6 +4,7 @@
 int _strlength(char *str);
 char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
+
 /**
  *_strlen - gets the length of a string passed thru it
  *@str: string passed thru
@@ -19,6 +20,7 @@ int _strlen(char *str)
 	}
 	return (len);
 }
+
 /**
  *_strcopy - copies a string into a new string called dest
  * @dest: destination for copied string
@@ -58,7 +60,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (caramon == NULL)
 		return (NULL);
 
-	caramon->name = malloc(sizeof(char) * (_strl(name) + 1));
+	caramon->name = malloc(sizeof(char) * (_strlen(name) + 1));
 		if (caramon->name == NULL)
 		{
 			free(caramon);
