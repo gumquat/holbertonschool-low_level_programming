@@ -28,7 +28,7 @@ int _strlen(char *str)
  * @srs: source string
  * Return: copied string
  */
-char *_strcopy(char *dest, char *srs);
+char *_strcopy(char *dest, char *src)
 {
 	int index = 0;
 
@@ -73,9 +73,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 			return (NULL);
 		}
 
-		caramon->name = _strcopy(doggo->caramon, caramon);
+		caramon->name = _strcopy(caramon->name, name);
 		caramon->age = age;
-		caramon->owner = _strcopy(doggo->owner, caramon);
+		caramon->owner = _strcopy(caramon->name, owner);
 
 		return (caramon);
 }
