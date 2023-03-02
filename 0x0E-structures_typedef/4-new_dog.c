@@ -4,18 +4,27 @@
 int _strlength(char *str);
 char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
-/*fucntion that returns length of a string*/
-int _strlength(char *str)
+/**
+ *_strlen - gets the length of a string passed thru it
+ *@str: string passed thru
+ *Return: string length
+ */
+int _strlen(char *str)
 {
-	int length = 0;
+	int len = 0;
 
 	while (*str)
 	{	str++;
-		length++;
+		len++;
 	}
-	return (length);
+	return (len);
 }
-/*function that copies a string*/
+/**
+ *_strcopy - copies a string into a new string called dest
+ * @dest: destination for copied string
+ * @srs: source string
+ * Return: copied string
+ */
 char *_strcopy(char *dest, char *srs);
 {
 	int index = 0;
@@ -31,8 +40,6 @@ char *_strcopy(char *dest, char *srs);
 	return (dest);
 }
 
-/*function that makes a spot in memory for a new structure*/
-/*then puts a new dog and its info in to that structure*/
 /**
  *new_dog - creates a new struct for info about a newly made dog
  *@name: dog name
