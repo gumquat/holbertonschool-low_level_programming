@@ -22,8 +22,8 @@ int _strlen(char *str)
 }
 
 /**
- *_strcopy - copies a string into a new string called dest
- * @dest: destination for copied string
+ *_strcopy - copies a string into a buffer pointed at by dest
+ * @dest: buffer destination for copied string
  * @srs: source string
  * Return: copied string
  */
@@ -31,10 +31,9 @@ char *_strcopy(char *dest, char *srs);
 {
 	int index = 0;
 
-	while (src[index])
+	for (; src[index]; index++)
 	{
 	dest[index] = src[index];
-	index++;
 	}
 
 	dest[index] = '\0';
