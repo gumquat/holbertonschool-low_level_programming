@@ -9,7 +9,7 @@ int _strlength(char *str)
 {
 	int length = 0;
 
-	while(*str)
+	while (*str)
 	{	str++;
 		length++;
 	}
@@ -55,8 +55,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		if (caramon->name == NULL)
 		{
 			free(caramon);
-			return NULL;
-		}	
+			return (NULL);
+		}
 
 	caramon->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 		if (caramon->owner == NULL)
