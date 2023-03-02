@@ -32,10 +32,8 @@ char *_strcopy(char *dest, char *srs);
 {
 	int index = 0;
 
-	for (index = 0; src[index]; index++)
-	{
-	dest[index] = src[index];
-	}
+	while(src[index++])
+		dest[index] = src[index];
 
 	dest[index] = '\0';
 
