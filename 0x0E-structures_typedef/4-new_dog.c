@@ -7,7 +7,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 /*fucntion that returns length of a string*/
 int _strlength(char *str)
 {
-	 int length = 0;
+	int length = 0;
 
 	while(*str)
 	{	str++;
@@ -27,6 +27,8 @@ char *_strcopy(char *dest, char *srs);
 	}
 
 	dest[index] = '\0';
+
+	return (dest);
 }
 
 /*function that makes a spot in memory for a new structure*/
@@ -40,7 +42,35 @@ char *_strcopy(char *dest, char *srs);
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *name;	
+	dog_t *caramon;
+
+	if (name == NULL || age < 0 || owner == NULL)
+		return (NULL);
+
+	caramon = malloc(sizeof(dog_t));
+	if (caramon == NULL)
+		return (NULL);
+
+	caramon->name = malloc(sizeof(char) * (_strl(name) + 1));
+		if (caramon->name == NULL)
+		{
+			free(caramon);
+			return NULL;
+		}	
+
+	caramon->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+		if (caramon->owner == NULL)
+		{
+			free(caramon->name);
+			free(caramon);
+			return (NULL);
+		}
+
+		caramon->name = _strcopy(doggo->caramon, caramon);
+		caramon->age = age;
+		caramon->owner = _strcopy(doggo->owner, caramon);
+
+		return (caramon);
 }
 
 
