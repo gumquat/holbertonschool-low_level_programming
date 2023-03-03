@@ -23,9 +23,8 @@ int (*get_op_func(char *s))(int, int)
 	if (strlen(s) != 1)
 		return (NULL);
 
-	while()
-	{
-	}
+	while(ops[i] != NULL && s[0] != ops[i] && s[0] != ops[0])
+		i++;
 
 	return (ops[i + 1]);
 }
