@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- *@array_iterator - ...
+ *array_iterator - ...
  *@array: array passed in
  *@size: size of array
  *@action: pointer to a function that returns nothing & takes an int
