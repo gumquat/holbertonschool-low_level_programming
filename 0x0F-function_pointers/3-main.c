@@ -12,29 +12,9 @@ int main (int argc, int *argv[])
 	int num2;
 	int (*operator)(int, int);
 
-	if(argv[2] == NULL)
+	if(argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-
-	operator = get_op_func(argv[2]);
-
-	if (argc >= 5 || argc <= 3)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
-	if ((*argv[2] == '/' || '%') && (b == 0))
-	{
-	printf("Error\n");
-	exit(100);
-	}
-
-	printf("%d\n", operator(a, b));
-	return (0);
 }
