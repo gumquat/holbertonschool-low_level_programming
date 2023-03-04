@@ -26,7 +26,7 @@ int main (int argc, int *argv[])
 	if (argc >= 5 || argc <= 3)
 	{
 		printf("Error\n");
-		exit(99):
+		exit(99);
 	}
 
 	if ((*argv[2] == '/' || '%') && (b == 0))
@@ -36,5 +36,5 @@ int main (int argc, int *argv[])
 	}
 
 	printf("%d\n", operator(a, b));
-	return (0):
+	return (0);
 }
