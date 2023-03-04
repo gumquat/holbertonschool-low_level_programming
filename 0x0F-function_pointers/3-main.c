@@ -11,7 +11,7 @@ int main (int argc, int *argv[])
 	int num1;
 	int num2;
 	int (*op)(int, int);
-	operator = argv[2];
+	int operator = argv[2];
 
 	if(argc != 4)
 	{
@@ -24,4 +24,21 @@ int main (int argc, int *argv[])
 	operator = argv[2];
 
 	op = get_op_function(operator);
+
+	if (op == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	/*operator is compared with '/' and if its equal to 0 (i.e. the same thing)*/
+	/*also the same comparison with '%', and if num2 is zero*/
+	if ((strcmp(operator, "/") == 0 || (strcmp(operator, "%")) == 0) && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	printf("%d\n", op(num1, num2));
+
+	return (0);
 }
