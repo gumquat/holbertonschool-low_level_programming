@@ -23,8 +23,8 @@ int (*get_op_func(char *s))(int, int)
 	if (strlen(s) != 1)
 		return (NULL);
 
-	while(ops[i].op != NULL && s[0] != ops[i].op[0])
+	while(/*iterate thru array of pointers to functions*/)
 		i++;
 
-	return (ops[i].f);
+	return (/*a pointer to a function*/);
 }
