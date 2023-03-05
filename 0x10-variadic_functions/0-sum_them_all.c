@@ -21,7 +21,7 @@ int sum_them_all(const unsigned int n, ...)
 	/*sets where the variable length part of the argument list starts/ends*/
 	va_start(list, n);
 
-	/*loop thru each argument adding the int vlaues*/
+	/*loop thru each argument adding the int values*/
 	while (i < n)
 	{
 		sum = sum + va_arg(list, int);
