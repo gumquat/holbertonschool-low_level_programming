@@ -11,7 +11,7 @@ int main (int argc, int **argv)
 	int num1;
 	int num2;
 	int (*op)(int, int);
-	operator = argv[2];
+	char *operator;
 
 	if(argc != 4)
 	{
@@ -19,9 +19,11 @@ int main (int argc, int **argv)
 		exit(98);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	operator = argv[2];
+	/*numbers probably go into the brackets*/
+	/*but you need to know which functions in argv are equivalent to which number*/
+	num1 = atoi(argv[]);
+	num2 = atoi(argv[]);
+	operator = argv[];
 
 	op = get_op_function(operator);
 
