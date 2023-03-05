@@ -11,7 +11,7 @@ int main (int argc, int **argv)
 	int num1;
 	int num2;
 	int (*op)(int, int);
-	int operator = argv[2];
+	operator = argv[2];
 
 	if(argc != 4)
 	{
@@ -30,7 +30,7 @@ int main (int argc, int **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	/*operator is compared with '/' and if its equal to 0 (i.e. the same thing)*/
+	/*operator compared with '/' and if equal to 0 (aka are the same thing)*/
 	/*also the same comparison with '%', and if num2 is zero*/
 	if ((strcmp(operator, "/") == 0 || (strcmp(operator, "%")) == 0) && num2 == 0)
 	{
