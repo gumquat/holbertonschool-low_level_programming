@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+#include <stdarg.h>
 
 int _putchar(char c);
 void print_numbers(const char *seperator, const unsigned int n, ...);
