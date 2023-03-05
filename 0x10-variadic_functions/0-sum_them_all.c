@@ -19,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 
 	/*sets where the variable length part of the argument list starts/ends*/
-	va_start(ap, n);
+	va_start(list, n);
 
 	/*loop thru each argument adding the int vlaues*/
 	while (i < n)
