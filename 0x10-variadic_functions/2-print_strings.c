@@ -6,7 +6,7 @@
  *@n: number of strings after n
  */
 
-void print_string(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 
 	va_list list;
@@ -17,16 +17,16 @@ void print_string(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-	pointer = va_arg(list, char *);
+		pointer = va_arg(list, char *);
 
-	if (pointer == NULL)
-		printf("(nil)");
-	else
-		printf("%s", pointer);
+		if (pointer == NULL)
+			printf("(nil)");
+		else
+			printf("%s", pointer);
 
-	if (i < (n - 1) && separator != NULL)
-		printf("%s", separator);
-	else if (i == (n - 1))
+		if (i < (n - 1) && separator != NULL)
+			printf("%s", separator);
+		else if (i == (n - 1))
 			printf("\n");
 
 	}
