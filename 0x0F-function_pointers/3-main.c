@@ -6,7 +6,7 @@
  *Return: at this point only god knows
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int num1;
 	int num2;
