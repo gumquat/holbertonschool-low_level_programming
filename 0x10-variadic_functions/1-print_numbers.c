@@ -20,7 +20,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 
 	va_start(list, n);
 
-	while (i < n - 1)
+	while (i < n)
 	{
 		printf("%d", va_arg(list, int));
 	
