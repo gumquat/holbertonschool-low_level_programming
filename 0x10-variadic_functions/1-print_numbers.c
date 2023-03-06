@@ -4,7 +4,6 @@
  *print_numbers - function that prints numbers passed thru
  *@seperator: string to print between the numbers 
  *@n: amount of numbers to be printed
- *Return: always 0
  */
 
 void print_numbers(const char *seperator, const unsigned int n, ...)
