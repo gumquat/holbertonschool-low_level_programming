@@ -39,7 +39,7 @@ return ((a) * (b));
  *@b: integer 2
  *Return: sum
  */
-int op_div (int a, int b)
+int op_div(int a, int b)
 {
 return ((a) / (b));
 }
