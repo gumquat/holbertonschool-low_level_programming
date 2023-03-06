@@ -10,7 +10,7 @@ void print_string(const char *separator, const unsigned int n, ...);
 {
 
 	va_list list;
-	unsigned int i = 0;
+	unsigned int i;
 	char *pointer;
 
 	if (n == 0)
@@ -21,25 +21,20 @@ void print_string(const char *separator, const unsigned int n, ...);
 
 	va_start(list, n);
 
-	while (i < n - 1)
+	for (i = 0; i < n; i++)
 	{
-		pointer = va_arg(list, char *);
-
-		if (pointer == NULL)
-			printf("(nil)");
-		else
-			printf("%s", pointer);
-
-		if (separator != NULL)
-			printf("%s", separator);
-	
-		i++;
-	}
+	pointer = va_arg(list, char *);
 
 	if (pointer == NULL)
-		printf("(nil)")
+		printf("(nil)");
+	else
+		printf("%s", pointer);
 
-	printf("\n");
+	if (i < (n - 1) && separator != NULL)
+		printf("%s", separator);
+	else if (i == (n - 1))
+			printf("\n");
 
+	}
 	va_end(list);
 }
