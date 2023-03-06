@@ -12,7 +12,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	va_list list;
 	unsigned int i;
 
-	if (n == NULL)
+	if (n == 0)
 	{
 		printf("\n");
 		return;
