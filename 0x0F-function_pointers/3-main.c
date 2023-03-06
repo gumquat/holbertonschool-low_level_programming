@@ -11,7 +11,7 @@ int main(int argc, int *argv[])
 	int num1;
 	int num2;
 	int (*character)(int, int);
-	int *operator;
+	char *operator;
 
 	if (argc != 4)
 	{
