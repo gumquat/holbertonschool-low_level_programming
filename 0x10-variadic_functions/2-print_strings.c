@@ -13,12 +13,6 @@ void print_string(const char *separator, const unsigned int n, ...);
 	unsigned int i;
 	char *pointer;
 
-	if (n == 0)
-		{
-		printf("\n");
-		return;
-		}
-
 	va_start(list, n);
 
 	for (i = 0; i < n; i++)
