@@ -2,7 +2,7 @@
 
 /**
  *print_numbers - function that prints numbers passed thru
- *@seperator: string to print between the numbers 
+ *@seperator: string to print between the numbers
  *@n: amount of numbers to be printed
  */
 
@@ -23,7 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	while (i < n - 1)
 	{
 		printf("%d", va_arg(list, int));
-	
+
 			if (separator != NULL)
 			{
 			printf("%s", separator);
