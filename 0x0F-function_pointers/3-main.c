@@ -19,11 +19,12 @@ int main (int argc, int **argv)
 		exit(98);
 	}
 
-	/*numbers probably go into the brackets*/
-	/*but you need to know which functions in argv are equivalent to which number*/
-	num1 = atoi(argv[]);
-	num2 = atoi(argv[]);
-	operator = argv[];
+	/*the numbers here represent what is getting typed in*/
+	/*as the argument, aka 1 + 1*/
+	/*where the first 1 is equal to argv[1], the + is argv[2], etc*/
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	operator = argv[2];
 
 	op = get_op_function(operator);
 
