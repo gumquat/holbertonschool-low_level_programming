@@ -6,7 +6,7 @@
  *@n: number of strings after n
  */
 
-void print_string(const char *separator, const unsigned int n, ...);
+void print_string(const char *separator, const unsigned int n, ...)
 {
 
 	va_list list;
