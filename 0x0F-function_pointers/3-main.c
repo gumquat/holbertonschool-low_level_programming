@@ -6,12 +6,12 @@
  *Return: at this point only god knows
  */
 
-int main(int argc, int **argv)
+int main(int argc, char *argv[])
 {
 	int num1;
 	int num2;
-	int (*operator)(int, int);
 	char *poop;
+	int (*operator)(int, int);
 
 	if (argc != 4)
 	{
