@@ -8,8 +8,7 @@
  */
 
 int (*get_op_func(char *s))(int, int)
-{
-
+{	
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -24,9 +23,9 @@ int (*get_op_func(char *s))(int, int)
 	if (strlen(s) != 1)
 		return (NULL);
 
-	/*the .op part makes sure you are only counting the characters*/
 	while (ops[i].op != NULL && s[0] != ops[i].op[0])
 		i++;
 
 	return (ops[i].f);
 }
+

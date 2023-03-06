@@ -1,16 +1,16 @@
 #ifndef CALC_H
 #define CALC_H
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h>
 #include <string.h>
+#include <stddef.h>
 
 /**
- *struct op - hold operator symbols
- *@op: the operator
- *@f: the function
- */
+*struct op - holds operator symbols
+*@op: the operator
+*@f: the function associated
+*/
+
 typedef struct op
 {
 	char *op;
