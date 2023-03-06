@@ -35,6 +35,11 @@ void print_string(const char *separator, const unsigned int n, ...);
 	
 		i++;
 	}
+
+	if (pointer == NULL)
+		printf("(nil)")
+
 	printf("\n");
+
 	va_end(list);
 }
