@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
- *get_op_func - contain the function that selects the correct function 
+ *get_op_func - contain the function that selects the correct function
  *to perform the operation asked by the user
  *@s: operator passed as an argument
  *Return: pointer to the needed function or NULL if bad garbage doodoo
@@ -24,7 +24,7 @@ int (*get_op_func(char *s))(int, int)
 		return (NULL);
 
 	/*the .op part makes sure you are only counting the characters*/
-	while(ops[i].op != NULL && s[0] != ops[i].op[0])
+	while (ops[i].op != NULL && s[0] != ops[i].op[0])
 		i++;
 
 	return (ops[i].f);
