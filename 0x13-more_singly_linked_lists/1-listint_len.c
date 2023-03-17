@@ -14,7 +14,7 @@ size_t lintint_len(const listint_t *h)
 	while (temp)
 	{
 		nodes++;
-		temp = tempt->next;
+		temp = temp->next;
 	}
 
 	return (nodes);
