@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *listint_len - returns number of elements in listint_t list
+ *lintint_len - returns number of elements in listint_t list
  *@h: pointer to header of a list
  *Return: number of elements in list_t
  */
