@@ -6,7 +6,7 @@
  * @head: pointer to the head of a list
  */
 
-void free_listint2(listint_t **hed)
+void free_listint2(listint_t **head)
 {
 	if (!(head))
 	{
