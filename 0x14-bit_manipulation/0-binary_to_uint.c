@@ -12,15 +12,14 @@ unsigned int binary_to_uint(const char *b)
 	ib (!b)
 		return (0);
 
-	while (b[index])
+	while (b[index] != '\0')
 	{
-		if (b[index] != '1' && b[index] != '0')
-			return (0);
-
 		if (b[index] == '1')
 			sum = ((2 * sum) + 1);
 		else if (b[index] == '0')
 			sum = sum * 2;
+		else 
+			return (0);
 
 		index++;
 	}
