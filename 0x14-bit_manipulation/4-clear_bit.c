@@ -1,21 +1,17 @@
 #include "main.h"
 
 /**
-* flip_bits - returns the num bits to flip to get from n to m
-* @n: source number
-* @m: destination number
-* Return: number of bit flips required
+* clear_bit - sets the value of a bit to 0 at a given index
+* @n: number
+* @index: location
+* Return: 1 good -1 bad
 */
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	int flips = 0;
-	unsigned long int num = n ^ m;
+	if (index > sizeof(long) * 8)
+		return (-1);
 
-	while (num > 0)
-	{
-		flips++;
-		num &= (num - 1);
-	}
+	*n &= ~(1 << index);
 
-	return (flips);
+	return (1);
 }
