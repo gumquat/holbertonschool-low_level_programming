@@ -7,23 +7,19 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int index, sum, count, length = 0;
+	unsigned int index, sum = 0
 
 	if (!b)
 		return (0);
 
-	while(b[length])
-		length++;
-
 	while (b[index])
 	{
-		if (b[index] != '0' && b[index] != '1')
+		if (b[index] != '1' && b[index] != '0')
 			return (0);
+	
+		if (b[index] == '1')
+			sum += pow(2, strlen(b) - index - 1);
 
-		if (b[index] = '1')
-		       sum += 1 << count;
-
-		index++	
+		index++;
 	}
-		return (sum);
 }
