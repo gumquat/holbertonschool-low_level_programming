@@ -23,6 +23,8 @@ unsigned int binary_to_uint(const char *b)
 			sum = sum * 2;
 		else
 		       return (0);
+
+		index++;
 	}
 	return (sum);
 }
