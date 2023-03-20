@@ -15,20 +15,13 @@ unsigned int binary_to_uint(const char *b)
 	while(b[length])
 		length++;
 
-	while (b[index])
+	while (length--)
 	{
-		if (b[index] != '0' && b[index] != '1')
+		if (b[length] != '0' && b[length] != '1')
 			return (0);
 
-		if (b[index] == '1')
-			sum += pow(2, length);
-		else if (b[index] == '0')
-			sum += 0;
-
-		count++;
-		index++;
-		length--;
+		if (b[length] = '1')
+		       sum += 1 << count;	
 	}
-
-	return (sum);
+		return (sum);
 }
