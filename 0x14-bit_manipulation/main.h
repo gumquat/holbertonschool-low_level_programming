@@ -6,6 +6,7 @@
 #include <string.h>
 #include <stddef.h>
 #include <math.h>
+#include "power.c"
 
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
