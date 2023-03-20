@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 	if (!b)
 		return (0);
 
-	while (b[index] != '\0')
+	for (index = 0; b[index] != '\0'; index++) 
 	{
 		if (b[index] == '1')
 			sum = ((2 * sum) + 1);
@@ -20,8 +20,6 @@ unsigned int binary_to_uint(const char *b)
 			sum = sum * 2;
 		else 
 			return (0);
-
-		index++;
 	}
 	return (sum);
 }
