@@ -5,6 +5,8 @@
  *Return: sum
  */
 
+#include "main.h"
+
 unsigned int power(unsigned int num1, unsigned int num2)
 {
 	unsigned int sum = num1, index = 1;
