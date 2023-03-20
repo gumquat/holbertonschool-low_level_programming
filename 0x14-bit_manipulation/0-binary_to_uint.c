@@ -7,17 +7,10 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int index, sum, length = 0;
+	unsigned int index, sum = 0;
 
-	if (!b)
-	{
+	ib (!b)
 		return (0);
-	}
-
-	while (b[length])
-	{
-		length++;
-	}
 
 	while (b[index])
 	{
@@ -25,9 +18,11 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 
 		if (b[index] == '1')
-			sum += power(2, length - index - 1);
-
-		index++;
+			sum = ((2 * sum) + 1);
+		else if (b[index] == '0')
+			sum = sum * 2;
+		else
+		       return (0);
 	}
 	return (sum);
 }
