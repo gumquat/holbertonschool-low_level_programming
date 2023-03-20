@@ -21,8 +21,6 @@ unsigned int binary_to_uint(const char *b)
 			sum = ((2 * sum) + 1);
 		else if (b[index] == '0')
 			sum = sum * 2;
-		else
-		       return (0);
 
 		index++;
 	}
