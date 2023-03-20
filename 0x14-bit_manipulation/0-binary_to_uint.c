@@ -7,25 +7,17 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int index, sum, count, length = 0;
+	unsigned int index, sum, count = 0;
 
 	if (!b)
 		return (0);
 
 	while (b[index])
 	{
-		length++
-		index++
-	}
-
-	index = 0;
-
-	while (length--)
-	{
-		if (b[length] != '0' && b[length] != '1')
+		if (b[index] != '0' && b[index] != '1')
 			return (0);
 
-		if (b[length] == '1')
+		if (b[index] == '1')
 			sum += 1 << count;
 
 		count++;
