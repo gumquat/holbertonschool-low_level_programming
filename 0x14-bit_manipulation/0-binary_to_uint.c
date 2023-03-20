@@ -16,12 +16,13 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[index] == '1')
 			sum = ((2 * sum) + 1);
+			index++;
 		else if (b[index] == '0')
 			sum = sum * 2;
+			index++
 		else 
 			return (0);
 
-		index++;
 	}
 	return (sum);
 }
