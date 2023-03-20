@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 
-	while(b[length])
+	while (b[length])
 	{
 		length++;
 	}
@@ -23,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[index] != '1' && b[index] != '0')
 			return (0);
-	
+
 		if (b[index] == '1')
 			sum += power(2, length - index - 1);
 

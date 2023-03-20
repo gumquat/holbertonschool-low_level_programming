@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stddef.h>
-#include <math.h>
-#include "power.c"
+
+unsigned int power(unsigned int num1, unsigned int num2);
 
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
