@@ -22,10 +22,10 @@ unsigned int binary_to_uint(const char *b)
 
 	while (length--)
 	{
-		if (b[index] != '0' && b[index] != '1')
+		if (b[length] != '0' && b[length] != '1')
 			return (0);
 
-		if (b[index] == '1')
+		if (b[length] == '1')
 			sum += 1 << count;
 
 		count++;
