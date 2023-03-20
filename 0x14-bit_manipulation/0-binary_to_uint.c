@@ -21,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	
 		if (b[index] == '1')
-			sum += _pow(2, length - index - 1);
+			sum += _pow(2, length - index);
 
 		index++;
 	}
