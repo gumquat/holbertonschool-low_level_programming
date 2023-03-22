@@ -14,14 +14,9 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	while (temp && location < index)
 	{
-		if (location == index)
-		{
-			return (temp);
-		}
-
 		temp = temp->next;
 		location++;
 	}
 
-	return (NULL);
+	return (temp);
 }
