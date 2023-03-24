@@ -16,7 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!hash_table || !size)
 		return (NULL);
 
-	has_table->array = malloc(sizeof(hash_node_t *) * size);
+	hash_table->array = malloc(sizeof(hash_node_t *) * size);
 
 	if (!hash_table->array)
 		return (NULL);
