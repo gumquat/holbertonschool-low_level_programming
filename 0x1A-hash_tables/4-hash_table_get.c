@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- *hash_tables_get - retrieves a value associated with a key
+ *hash_table_get - retrieves a value associated with a key
  *@ht: hash table
  *@key: keeeeey
  *Return: value from element on success, NULL on failure
@@ -24,7 +24,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		node = node->next;
 
 	if (node == NULL)
-		return NULL;
-	else 
+		return (NULL);
+	else
 		return (node->value);
 }
