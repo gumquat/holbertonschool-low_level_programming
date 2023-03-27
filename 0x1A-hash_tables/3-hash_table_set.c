@@ -9,58 +9,45 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index;
-	hash_node_t *newNode;
-	hash_node_t *current;
+
+	hash_node_t *new;
+	char *value_copy;
+	unsigned long int index, i;
 	
-	// check if the data passed thru is usable, otherwise return 0
-	if (ht == NULL || key == NULL || strcmp(key, "\0") == 0)
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
+		return (0);
+
+	value_copy = strdup(value);
+	if (value_copy == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-	current = ht->array[index];
-
-	newNode = malloc(sizeof(hash_node_t));
-	
-	//check if there was room enough to make the new node, otherwise return 0
-	if (newNode == NULL)
-			return (0);
-
-	newNode->key = strdup(key);
-	newNode->value = strdup(value);
-	newNode->next = NULL;
-
-		if (current)
+	for (i = index; ht->array[i]; i++)
+	{
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
-				if (strcmp(current->key, key) == 0)
-				{
-					newNode->next = current;
-					ht->array[index] = newNode;
-					return (1);
-				}
-		
-					while (current->next)
-					{
-				
-						if (strcmp(current->next->key, key) == 0)
-						{
-		
-							newNode->next = current->next->next;
-							free(current->next->key), free(current->next->value), free(current->next);
-							current->next = newNode;
-							return (1);
-						}
-		
-						current = current->next;
-					}
-
-		newNode->next = ht->array[index];
-		ht->array[index] = newNode;
-
-		return (1);
-
+			free(ht->array[i]->value);
+			ht->array[i]->value = value_copy;
+			return (1);
 		}
-		
-		ht->array[index] = newNode;
-		return (1);
+	}
+
+	new = malloc(sizeof(hash_node_t));
+	if (new == NULL)
+	{
+		free(value_copy);
+		return (0);
+	}
+	new->key = strdup(key);
+	if (new->key == NULL)
+	{
+		free(new);
+		return (0);
+	}
+	new->value = value_copy;
+	new->next = ht->array[index];
+	ht->array[index] = new;
+
+	return (1);
+
 }
