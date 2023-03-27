@@ -9,7 +9,6 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-
 	hash_node_t *new;
 	char *value_copy;
 	unsigned long int index, i;
@@ -31,7 +30,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (1);
 		}
 	}
-
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
 	{
@@ -47,7 +45,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new->value = value_copy;
 	new->next = ht->array[index];
 	ht->array[index] = new;
-
 	return (1);
-
 }
