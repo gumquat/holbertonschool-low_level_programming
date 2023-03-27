@@ -30,28 +30,28 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newNode->value = strdup(value);
 	newNode->next = NULL;
 
-		if (curr)
+		if (current)
 		{
-				if (strcmp(curr->key, key) == 0)
+				if (strcmp(current->key, key) == 0)
 				{
-					newNode->next = curr;
+					newNode->next = current;
 					ht->array[index] = newNode;
 					return (1);
 				}
 		
-					while (curr->next)
+					while (current->next)
 					{
 				
-						if (strcmp(curr->next->key, key) == 0)
+						if (strcmp(current->next->key, key) == 0)
 						{
 		
-							newNode->next = curr->next->next;
-							free(curr->next->key), free(curr->next->value), free(curr->next);
-							curr->next = newNode;
+							newNode->next = current->next->next;
+							free(current->next->key), free(current->next->value), free(current->next);
+							current->next = newNode;
 							return (1);
 						}
 		
-						curr = curr->next;
+						current = current->next;
 					}
 
 		newNode->next = ht->array[index];
