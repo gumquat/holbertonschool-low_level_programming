@@ -11,36 +11,29 @@
  * else returns the index where the value was found
  */
 
- int binary_search(int *array, size_t size, int value)
- {
-  int left: 0;
-  int right = (int)size - 1;
-  int middle;
-  int i;
+int binary_search(int *array, size_t size, int value)
+{
+	int left = 0;
+	int right = (int)size - 1;
+	int mid;
+	int i;
 
-  while (left <= right)
-  {
-    printf("Searching in array: ");
-    for (i = left; i < right; i++)
-    {
-      printf("%d, ", array[i]);
-    }
-    printf("%d\n", array[i]);
+	while (left <= right)
+	{
+		printf("Searching in array: ");
+		for (i = left; i < right; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
 
-    middle = (left + right) / 2;
+		mid = (left + right) / 2;
 
-    if (array[middle] < value)
-    {
-      left = middle + 1;
-    } 
-    else if (array[middle] > value)
-    {
-      right = middle + 1;
-    }
-    else
-    {
-      return middle;
-    }
-  }
-  return (-1);
- }
+		if (array[mid] < value)
+			left = mid + 1;
+		else if (array[mid] > value)
+			right = mid - 1;
+		else
+			return (mid);
+	}
+
+	return (-1);
+}
