@@ -15,10 +15,11 @@ int linear_search(int *array, size_t size, int value) {
   if (array == NULL) {
       return -1;
   }
-  int i = 0;
-  for (; i < size; i++) {
+
+  for (i = 0; i < (int)size; i++) {
       printf("Current value: %d, Looking for: %d\n", array[i], value);
       if (array[i] == value) {
+        return (i);
       }
   }
   return -1;
