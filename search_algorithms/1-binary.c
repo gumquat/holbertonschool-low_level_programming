@@ -27,19 +27,19 @@
     }
     printf("%d\n", array[i]);
 
-    mid = (left + right) / 2;
+    middle = (left + right) / 2;
 
-    if (array[mid] < value)
+    if (array[middle] < value)
     {
-      left = mid + 1;
+      left = middle + 1;
     } 
-    else if (array[mid] > value)
+    else if (array[middle] > value)
     {
-      right = mid + 1;
+      right = middle + 1;
     }
     else
     {
-      return mid;
+      return middle;
     }
   }
   return (-1);
