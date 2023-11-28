@@ -114,3 +114,44 @@ In the above Python function, the time complexity is O(nlog(n)) because the arra
 ## Conclusion
 
 Understanding time complexity notations is crucial for evaluating the efficiency of an algorithm. It helps us to choose the most efficient algorithm for a given problem and to understand the trade-offs between different algorithms. Remember, lower time complexity usually means better performance, but it's also important to consider other factors like space complexity and readability of the code.
+
+# Linear Search Algorithm
+
+The Linear Search is a method used in computer science to find an element within a list or array. It checks each element of the list in turn until a match is found or the entire list has been searched.
+
+The Linear Search algorithm starts at one end of the list and proceeds through each element of the list until the target element is located. If the target element is not found, the search continues until the entire list has been searched
+
+The algorithm makes at most n comparisons, where n is the length of the list. This means that in the worst-case scenario, the algorithm would have to check every element in the list.
+
+The time complexity of the Linear Search algorithm is O(n) in the worst case and O(1) in the best case. This is because in the worst case, the algorithm has to check every element in the list, hence the time complexity is linear. However, in the best case, where the target element is the first element of the list, the time complexity is constant, i.e., O(1).
+
+```
+#include <stdio.h>
+
+int linearSearch(int arr[], int n, int x) {
+   int i;
+   for(i = 0; i < n; i++) {
+       if(arr[i] == x) {
+           return i;
+       }
+   }
+   return -1;
+}
+
+int main(void) {
+   int arr[] = {2, 4, 3, 7, 13, 87, 23, 90, 45, 1};
+   int x = 90;
+   int n = sizeof(arr) / sizeof(arr[0]);
+   int result = linearSearch(arr, n, x);
+   if(result == -1) {
+       printf("Element is not present in array");
+   } else {
+       printf("Element is present at index %d", result);
+   }
+   return 0;
+}
+```
+
+In this code, the linearSearch function takes an array, the size of the array, and the value to search for as input. It iterates over the array and checks if the current element is equal to the value. If it is, it returns the index of the element. If the value is not found in the array, it returns -1.
+
+In the main function, we define an array and the value to search for. We calculate the size of the array and call the linearSearch function with the array, its size, and the value to search for. If the value is found, we print the index of the value. If the value is not found, we print a message indicating that the value is not present in the array.
