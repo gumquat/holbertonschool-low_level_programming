@@ -9,6 +9,7 @@
  * @value: the value to search for
  * Return: -1 if `value` is not present or if `array` is NULL; else returns
  * the index where the value was found.
+ * Description: struct skiplist_s
  */
 int linear_search(int *array, size_t size, int value)
 {

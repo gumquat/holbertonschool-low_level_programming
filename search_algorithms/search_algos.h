@@ -14,7 +14,8 @@
  * @next: Pointer to the next node
  * @express: Pointer to the next node
  *
- * Desc.: single-linked list node structure
+ * Description: single-linked list node structure
+ * Description: struct skiplist_s
  */
 typedef struct skiplist_s
 {
