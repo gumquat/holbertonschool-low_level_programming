@@ -15,7 +15,7 @@ int linear_search(int *array, size_t size, int value) {
   if (array == NULL) {
       return -1;
   }
-  for (i = 0; i < size; i++) {
+  for (size_t i = 0; i < size; i++) {
       printf("Current value: %d, Looking for: %d\n", array[i], value);
       if (array[i] == value) {
       }
