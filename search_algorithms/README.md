@@ -155,3 +155,62 @@ int main(void) {
 In this code, the linearSearch function takes an array, the size of the array, and the value to search for as input. It iterates over the array and checks if the current element is equal to the value. If it is, it returns the index of the element. If the value is not found in the array, it returns -1.
 
 In the main function, we define an array and the value to search for. We calculate the size of the array and call the linearSearch function with the array, its size, and the value to search for. If the value is found, we print the index of the value. If the value is not found, we print a message indicating that the value is not present in the array.
+
+# Binary Search Algorithm
+
+Binary Search is a searching algorithm that finds the position of a target value within a sorted array. It works by comparing the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array. The time complexity of this algorithm is O(log n).
+
+## Example 
+
+Consider an array A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and we want to find the position of 5 in this array.
+
+* Set lower bound to 0
+* Set upper bound to n-1
+* If x > A[n-1] or x < A[0] then print element not found
+* Set mid to the lower bound plus upper bound divided by 2
+* If A[mid] < x then set lower bound to mid + 1
+* Else if A[mid] > x then set upper bound to mid - 1
+* Else if A[mid] = x then print element found at index mid
+* If lower bound > upper bound then print element not found
+* Go to step 4
+
+## An EXAMPLE in C
+
+```
+#include <stdio.h>
+
+void BinarySearch(int arr[], int n, int x)
+{
+   int low = 0;
+   int high = n;
+   int mid;
+   // If x is greater than the last element or less than the first element, element not found
+   while(low <= high)
+   {
+       mid = (low + high)/2; // Set mid to the lower bound plus upper bound divided by 2
+       if(arr[mid] == x) // If element is found, print index
+       {
+           printf("Element found at index %d", mid+1);
+           return;
+       }
+       else if(arr[mid] < x) // If element is greater than mid, set lower bound to mid + 1
+       {
+           low = mid + 1;
+       }
+       else // If element is less than mid, set upper bound to mid - 1
+       {
+           high = mid - 1;
+       }
+   }
+   printf("Element not found");
+}
+
+int main()
+{
+   int arr[] = {10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60};
+   int n = sizeof(arr)/sizeof(arr[0]);
+   int x = 30;
+   BinarySearch(arr, n, x);
+   return 0;
+}
+```
